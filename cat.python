@@ -1,0 +1,74 @@
+size(500,500)
+#background(255,255,0)
+scale(1)
+#head
+def head():
+    #Orelha esquerda
+    line(140,140,160,60)
+    line(240,180,160,60)
+    #parte de dentro orelha esquerda
+    line(150,140,162,70)
+    line(230,180,162,70)
+    
+    #Orelha direita
+    line(160,180,240,60)
+    line(260,140,240,60)
+    #parte de dentro orelha direita
+    line(180,180,238,70)#line(x1,y1,x2,y2)
+    line(250,140,238,70)#line(x1,y1,x2,y2)
+    
+    #cabeca
+    ellipse(200,140,120,120)
+    
+    #olho esquerdo
+    fill(255,255,255)#branco
+    ellipse(170,130,32,16) #ellipse(x,y,largura,altura)
+    fill(255,255,0)#amarelo
+    ellipse(170,130,12,16)
+    fill(0,255,0)#verde
+    ellipse(170,130,2,15)
+    
+    #olho direito 
+    fill(255,255,255)#branco
+    ellipse(230,130,32,16)
+    fill(255,255,0)#amarelo
+    ellipse(230,130,12,16)
+    fill(0,255,0)#verde
+    ellipse(230,130,2,15)
+    
+    #mancha
+    noFill()
+    ellipse(230,125,50,50)
+    
+    #nariz
+    line(195,160,205,160)
+    line(195,160,205,170)
+    line(195,170,205,160)
+    
+    #bigode esquerdo
+    line(185,160,130,150)
+    line(185,160,130,170)
+    line(185,160,130,190)
+    
+    #bigode direito
+    line(215,160,270,190)
+    line(215,160,270,170)
+    line(215,160,270,150)
+    
+    #boca
+    line(195,180,205,180)
+
+def body():
+    #perna esquerdo
+    ellipse(180,320,30,110)
+    #perna direita
+    ellipse(220,320,30,110)
+    
+    #corpo
+    fill(255,255,255)#branco
+    ellipse(200,274,140,150)
+    
+    
+    
+head()
+body()
